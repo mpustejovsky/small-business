@@ -4,7 +4,7 @@ import Geocode from "react-geocode";
 import {MyMarker} from "../Other/MyMarker"
 
 const getGeo =()=>{
-Geocode.setApiKey("AIzaSyD2ZZYBOdiEyvS0_N0bh5yEmijKWF2MGT0");
+Geocode.setApiKey(process.env.REACT_APP_API_KEY);
 Geocode.setLanguage("en")
 Geocode.fromAddress("13382 US-175, Kemp, TX 75143").then(
     response => {
